@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Courier New, monospace;
+    background-color: #008080; /* Windows 95 style blue-green background */
+  }
+  
+  
+  
+  .taskbar {
+    background-color: #e0e0e0; /* Lighter taskbar color */
+    height: 40px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Add padding for internal spacing */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); /* Smaller shadow for depth */
+    border: 1px solid #b0b0b0; /* Lighter border color */
+    position: relative; /* Make taskbar position relative */
+  }
+  
+  .social-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .social-links li {
+    margin-right: 10px; /* Adjust spacing between social links */
+  }
+  
+  .social-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding: 5px 10px; /* Adjust padding */
+    border: 1px solid transparent; /* Remove border */
+    border-radius: 4px; /* Add border-radius for rounded edges */
+  }
+  
+  .social-links li a:hover {
+    color: rgb(255, 180, 100); /* Light orange hover color */
+  }
+
+
+.about-link {
+  position: absolute;
+  top: 53%;
+  right: 60px; /* Adjust the right value to move the "about" link */
+  transform: translateY(-60%);
+}
+  
+  .about-link a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  .about-link a:hover {
+    color: rgb(255, 180, 100); /* Light orange hover color */
+  }
+  
+  .arrow-link {
+    position: absolute;
+    top: 2%;
+    right: 23.5px;
+    transform: translateY(-50%);
+  }
+  
+  .arrow-link a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    cursor: default; /* Set the cursor to default */
+  }
+  
+  .about-link:hover + .arrow-link a {
+    color: rgb(255, 180, 100); /* Light orange hover color */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center; 
+    background-color: #e0e0e0; 
+    border: 2px solid black; 
+    min-width: 120px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    z-index: 1;
+    top: calc(100% + 5px);
+    right: 0;
+  }
+  
+  .about-link:hover .dropdown-content,
+  .dropdown-content:hover {
+    display: block;
+
+  }
+
+  
+
+  
+
+  
+
+
+  
+
